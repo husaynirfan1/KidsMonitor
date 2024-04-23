@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/purple_500"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/package_icon"
+                    android:background="@drawable/ic_baseline_access_alarm_24"/>
+
+                <TextView
+                    android:id="@+id/package_name"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:maxLines="1"
+                    android:text="package name"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="6dip"
+                    android:paddingStart="12dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D4D4"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:text="Last Time Used"
+                    android:fontFamily="@font/aileron_heavy"
+                    android:paddingEnd="6dip"
+                    android:paddingStart="12dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/last_time_used"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:text="@string/last_time_used"
+                    android:paddingEnd="6dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Usage Time"
+                    android:fontFamily="@font/aileron_heavy"
+                    android:paddingEnd="6dip"
+                    android:paddingStart="12dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/usage_time"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="usage_time"
+                    android:paddingEnd="6dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
